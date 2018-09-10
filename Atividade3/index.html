@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Blog sobre crianças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div><a href="#"><h1>Blog sobre crianças</h1></a></div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://edition.cnn.com/2018/09/03/opinions/france-smartphone-ban-opinion-bociurkiw/index.html">Matéria 1</a></li>
+            <li><a href="https://www.bbc.co.uk/news/uk-england-lancashire-45398774">Matéria 2</a></li>
+            <li><a href="http://news.met.police.uk/news/christmas-tree-project-launched-137264">Matéria 3</a></li>
+            <li class="floatR"><a href="https://github.com/ruanrochaas">Github</a></li>
+        </ul>
+    </nav>
+    <div class="cadastro">
+        <div class="matInic">
+            <h2 class="titulo_inic">OI, TEMOS OS MELHORES ARTIGOS SOBRE EDUCAÇÃO <br>DA INTERNET</h2>
+            <P class="titulo_inic titulo_sec">DELICIE-SE COM ELES</P>
+            <p class="para_tit_inic">Um texto convencendo você a ler os artigos. Um texto convencendo você a ler os artigos. Um texto convencendo você a ler os artigos. Um texto convencendo você a ler os artigos. Um texto convencendo você a ler os artigos. Um texto convencendo você a ler os artigos. </p>
+            <a href="#art1"><button>Leia um artigo</button></a>
+            <a href="#form"><button>Colabore</button></a>
+        </div>
+        <article>
+            <form class="form" action="" method="GET" id="form">
+                <div class="form-item" style="padding-top:10px">Faça seu cadastro aqui!</div>
+                <div style="margin: 20px;">
+                    <div class="form-item"><input type="text" placeholder="Nome" maxlength="15"></div>
+                    <div class="form-item"><input type="number" placeholder="Senha" min="25000" max="30000"></div>
+                    <div class="form-item"><input type="aviso" value="Cadastrar no blog" readonly></div>
+                </div>
+                <div style="margin: 20px;">
+                    <div style="width: 160px; margin: auto; text-align: left;">
+                        <input type="radio" name="robot">Eu não sou um robo<br>
+                        <input type="radio" name="robot">Eu sou um robo
+                    </div>
+                </div>
+                <div style="width: 160px; margin: auto; text-align: left;"><input type="checkbox">Assinar newsletter</div>
+                <div class="form-item"><button onclick="cadst()">Cadastrar</button></div>
+            </form>
+        </article>
+    </div>
+    <div>
+        <div class="div_titulo">
+            <h2 class="titulo_secao">ARTIGOS</h2>
+        </div>
+        <div class="container">
+            <article class="art">
+                <section id="imgArt1"></section>
+                <section class="sec">
+                    <h3>Pintar e Crescer</h3>
+                    <p>Deixe seu filho se sujar desenhando. Deixe seu filho se sujar desenhando. Deixe seu filho se sujar desenhando. Deixe seu filho se sujar desenhando. Deixe seu filho se sujar desenhando. </p>
+                </section>
+            </article>
+            <article class="art" style="border-right-style: dotted; border-bottom-style: dotted; border-width: 0.5vw; border-color: blueviolet;">
+                <section id="imgArt2"></section>
+                <section class="sec">
+                    <h3 style="width: 110px">Tabletizando</h3>
+                    <p>O tablet pode ser bom. O tablet pode ser bom. O tablet pode ser bom. O tablet pode ser bom. O tablet pode ser bom. O tablet pode ser bom. O tablet pode ser bom. O tablet pode ser bom. </p>
+                </section>
+            </article>
+        </div>
+        <div class="container">
+            <article class="art" style="border-right-style: dashed; border-bottom-style: dashed; border-width: 0.05in; border-color: brown">
+                <section>
+                    <svg id="svgArt3">
+                        <rect x="0" y="0" width="450px" height="210px" fill="deepskyblue" />
+                        <rect x="0" y="210" width="450px" height="50px" fill="brown" />
+                        <circle cx="175" cy="45" r="30" fill="black" />
+                        <rect x="170" y="70" width="8px" height="100px" fill="black" />
+                        <polygon points="170,75 170,85 130,120 130,115" fill="black" />
+                        <polygon points="175,73 175,85 220,120 220,115" fill="black" />
+                        <polygon points="170,160 170,170 130,210 130,205" fill="black" />
+                        <polygon points="178,160 177,170 220,210 220,205" fill="black" />
+                    </svg>
+                </section>
+                <section class="sec">
+                    <h3 style="width: 190px">Programe desenhando</h3>
+                    <p>A importância de ensinar seu filho a programar. A importância de ensinar seu filho a programar. A importância de ensinar seu filho a programar. A importância de ensinar seu filho a programar.</p>
+                </section>
+            </article>
+            <article class="art" style="border-right-style: solid; border-bottom-style: solid; border-width: 0.2cm; border-color: chartreuse">
+                <h3 style="float:left; padding-left: 10px">Vídeos Divertidos</h3>
+                <div>
+                    <a onclick="prox()"><h4 style="float:right; padding-right: 10px">Próximo</h4></a>
+                    <a onclick="ant()"><h4 style="float:right; padding-right: 10px">Anterior</h4></a>
+                </div>
+                <iframe id="vid1" style="display:block" width="350" height="330" src="https://www.youtube.com/embed/OaB2ebyEQ-Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe id="vid2" style="display:none" width="350" height="330" src="https://www.youtube.com/embed/Fsn48jgFUGM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <p style="padding-top: 15px">Para ver mais acesse:</p>
+        <div class="icon"><a href="http://facebook.com/meunomeinteiro"><img src="facebook.png" alt="facebook logo"></a></div>
+        <p>Site desenvolvido por Ruan Rocha em 2018</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
