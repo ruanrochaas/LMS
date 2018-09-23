@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @font-face{
+            font-family: minhafonte;
+            src: url(BelindaScript.otf);
+            font-weight: normal;
+            font-style: normal;
+        }
+        .teste{
+            float: left;
+            width: 300px;
+            height: 300px;
+            background-color: blueviolet;
+            transform: skew(3deg, 3deg);
+        }
+        .teste:hover{
+            transform: rotate(45deg);
+            transition: transform 200ms;
+            background-color: red;
+        }
+        .teste2{
+            transform: rotate(45deg);
+            transition: transform 200ms;
+            background-color: red;
+        }
+        .bla{
+            font-family: minhafonte;
+        }
+    </style>
+</head>
+<body>
+    <div class="teste" onclick="mudarClasse(this)"></div>
+    <div class="teste" onclick="mudarClasse(this)"></div>
+    <div class="teste" onclick="mudarClasse(this)"></div>
+    <div class="teste" onclick="mudarClasse(this)"></div>
+    <div class="teste" onclick="mudarClasse(this)"></div>
+    <div class="teste" onclick="mudarClasse(this)"></div>
+    <div class="teste" onclick="mudarClasse(this)"></div>
+    <div class="teste" onclick="mudarClasse(this)"></div>
+    <h1 class="bla">BlaBlaBla</h1>
+    <h1>BlaBlaBla</h1>
+    <script>
+        function mudarClasse(ele){
+            ele.classList.add('teste2');
+        }
+    </script>
+</body>
+</html>
