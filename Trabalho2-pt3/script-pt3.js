@@ -353,6 +353,7 @@ function modalNovoGrupo(){
     input3.setAttribute("type", "submit");
     input3.setAttribute("value", "Criar");
     input3.addEventListener("click", ()=>{
+        event.preventDefault();
         criarNovoGrupo();
         let modalCont = document.querySelector(".modal-container");
         modalCont.classList.remove("visivel");
