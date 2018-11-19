@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="seila">
+        adahskdjashk
+    </div>
+    <div class="container">
+        <p class="paragrafo">Oi, como está?</p>
+    </div>
+    <script>
+        /* let parteDocumento = document.querySelector(".container p");
+        
+        console.log(parteDocumento.innerText);
+
+        document.querySelector(".container p").innerText = guardarTexto; */
+        
+        /* 
+        let conexao = new XMLHttpRequest();
+
+        let url = "https://jsonplaceholder.typicode.com/post/1/comments";
+        
+        conexao.open("GET", url, true);
+
+        conexao.onload = function(){
+            if(this.status == 200){
+                let p = document.createElement("p");
+                let div = document.querySelector(".container");
+                
+                p.innerText = JSON.parse(this.responseText)[0].body;
+                div.appendChild(p);
+            }
+        };
+        
+        conexao.send(); */
+
+
+
+        localStorage.setItem("idTexto","0");
+
+        function pegarTexto(){
+            let xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET", "https://jsonplaceholder.typicode.com/post/1/comments", true);
+            xhttp.onload = function(){
+                if(this.status == 200){
+                    let p = document.createElement("p");
+                    let div = document.querySelector(".container");
+                    div.innerHTML = "";
+
+                    p.innerText = JSON.parse(this.responseText)[Number(localStorage.getItem("idTexto"))].body;
+                    div.appendChild(p);
+
+                    let id = Number(localStorage.getItem("idTexto")) + 1;
+                    if(id > 4){
+                        id = 0;
+                    }
+                    localStorage.setItem("idTexto", String(id));
+                }
+            }
+            xhttp.send();
+        }
+
+        setInterval(pegarTexto,1000);
+
+
+        /* let container = document.querySelector(".container");
+        let paragrafo = document.createElement("p");
+        paragrafo.innerText = "Texto 2";
+        container.appendChild(paragrafo);
+
+        console.log(container); */
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
