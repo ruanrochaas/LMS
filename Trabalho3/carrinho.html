@@ -9,8 +9,67 @@
     <title>Suas compras</title>
 </head>
 <body>
-    
-
+    <header class="row header">
+        <div class="logo col-sm-8">
+            <a href="./loja.html"><h1>Loja de Final de Semestre do Ruan Cansado</h1></a>
+        </div>
+        <div class="col-sm-4">
+            <div class="dropdown float-right mr-3">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Cesta de Compras
+                <span class="caret"></span></button>
+                <div class="dropdown-menu">
+                    <div class="produtos">
+                        <p>Coragem - 10 - 50 reais</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary ml-3" onclick="window.location.href = './carrinho.html'">Finalizar</button>
+                </div>
+            </div>
+            <!-- <div class="dropdown float-right mr-3">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Cadastrar-se
+                <span class="caret"></span></button>
+                <form class="dropdown-menu">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite a senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+            <div class="dropdown float-right mr-3">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Faça Login
+                <span class="caret"></span></button>
+                <form class="dropdown-menu">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite a senha">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Logar</button>
+                </form>
+            </div> -->
+        </div>
+    </header>
+    <section class="produtos">
+        <h2 class="ml-4 mt-4">
+            Produtos na Cesta
+        </h2>
+        <button type="button" class="btn btn-primary ml-4 mb-4">Finalizar Compra</button>
+    </section>
+    <section class="compras-passadas">
+        <h2 class="ml-4 mt-4">
+            Compras passadas
+        </h2>
+    </section>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+h1{
+    font-size: 20px;
+    margin: 5px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.header{
+    margin: 0;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.produtos{
+    border-bottom: 1px solid black;
+}

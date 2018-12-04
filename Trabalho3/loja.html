@@ -11,10 +11,21 @@
 <body>
     <header class="row header">
         <div class="logo col-sm-8">
-            <h1>Loja de Final de Semestre do Ruan Cansado</h1>
+            <a href="./loja.html"><h1>Loja de Final de Semestre do Ruan Cansado</h1></a>
         </div>
         <div class="col-sm-4">
             <div class="dropdown float-right mr-3">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Cesta de Compras
+                <span class="caret"></span></button>
+                <div class="dropdown-menu">
+                    <div class="produtos">
+                        <p>Coragem - 10 - 50 reais</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary ml-3" onclick="window.location.href = './carrinho.html'">Finalizar</button>
+                </div>
+            </div>
+            <!-- <div class="dropdown float-right mr-3">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
                     Cadastrar-se
                 <span class="caret"></span></button>
@@ -27,7 +38,7 @@
                         <label for="exampleInputPassword1">Senha</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite a senha">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </form>
             </div>
             <div class="dropdown float-right mr-3">
@@ -43,9 +54,9 @@
                         <label for="exampleInputPassword1">Senha</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite a senha">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Logar</button>
                 </form>
-            </div>
+            </div> -->
         </div>
     </header>
     <section class="card-container-ruan">
