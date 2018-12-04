@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+h1{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.header{
+    margin: 0;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.card-container-ruan{
+    text-align: center;
+}
+
+.card-ruan{
+    display: inline-block;
+    margin: 20px;
+}
